@@ -19,6 +19,6 @@
 
 ---
 
-![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=Ponpon55837&show_icons=true&hide=prs&theme=dracula)
+[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=Ponpon55837&show_icons=true&hide=prs&theme=dracula)](https://github-readme-stats-1-b1tbo7664.vercel.app)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ponpon55837&theme=dracula)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Ponpon55837&theme=dracula)](https://github-readme-stats-1-b1tbo7664.vercel.app)
