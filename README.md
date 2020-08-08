@@ -17,6 +17,6 @@
 
 ---
 
-<figure class="video_container">
+<figure>
   <iframe src="https://hangmen-game-with-react-js.vercel.app" frameborder="0" width='600' height='600' allowfullscreen="true"> </iframe>
 </figure>
