@@ -1,3 +1,5 @@
+[![Visits Badge](https://badges.pufler.dev/commits/yearly/Ponpon55837)](https://badges.pufler.dev)[![Visits Badge](https://badges.pufler.dev/commits/yearly/Ponpon55837)](https://badges.pufler.dev)
+
 # Hi there, I'm Upfloor - aka program learner. 👋
 
 ## I'm a Developer, Learner, Designer!
