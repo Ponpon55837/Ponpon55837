@@ -19,6 +19,8 @@
 
 ---
 
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Ponpon55837&show_icons=true)  
+
 ## My love role at ow
 
 ![mei gif](https://media3.giphy.com/media/3o6EhD8Soj2RCzU448/giphy.gif?cid=ecf05e47oell547r0rzjic7yxd6iuynt67pbcrg1t35mypfm&rid=giphy.gif)
