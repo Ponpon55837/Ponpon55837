@@ -21,6 +21,7 @@
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Ponpon55837&show_icons=true)  
 
-## My love role at ow
+## Programmer's daily
 
-![mei gif](https://media3.giphy.com/media/3o6EhD8Soj2RCzU448/giphy.gif?cid=ecf05e47oell547r0rzjic7yxd6iuynt67pbcrg1t35mypfm&rid=giphy.gif)
+![programmer gif](https://thumbs.gfycat.com/AchingSlimyAmurstarfish-size_restricted.gif)
+![programmer gif](https://3.bp.blogspot.com/-4qWTwclCzmg/VPcEgcA10nI/AAAAAAAAECQ/xz81Moc1z4I/s1600/14.gif)
