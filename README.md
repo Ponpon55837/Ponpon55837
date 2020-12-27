@@ -6,7 +6,7 @@
 
 🔭 I’m currently working on a frontend course!<br />
 🌱 I’m currently learning javascript. 🤣 <br />
-👯 I’m looking to learning more react.js, next.js and cms api course. 😁 <br />
+👯 I’m looking to learning more react.js, next.js, vue.js and cms api course. 😁 <br />
 🥅 Goals: Contribute more to Open Source projects with js. 💖 <br />
 ⚡ Fun fact: I love to eat dilicious food, play online game, and watch Taiwan local drama.
 
