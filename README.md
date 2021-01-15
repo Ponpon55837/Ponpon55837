@@ -21,7 +21,7 @@
 
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Ponpon55837&show_icons=true)  
 
-## Programmer's daily
+## When I am coding, I can hear nothing.
 
-![programmer gif](https://thumbs.gfycat.com/AchingSlimyAmurstarfish-size_restricted.gif)
-![programmer gif](https://3.bp.blogspot.com/-4qWTwclCzmg/VPcEgcA10nI/AAAAAAAAECQ/xz81Moc1z4I/s1600/14.gif)
+![programmer gif](https://thumbs.gfycat.com/KnobbyJoyfulDeermouse-size_restricted.gif)
+![programmer gif](https://media4.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
