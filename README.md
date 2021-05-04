@@ -2,7 +2,7 @@
 
 # Hi there, I'm Upfloor - aka program learner. 👋
 
-## I'm a Developer, Learner, Designer!
+## I'm always to be a learner at the coding road!
 
 🔭 I’m currently working on a frontend course!<br />
 🌱 I’m currently learning javascript. 🤣 <br />
