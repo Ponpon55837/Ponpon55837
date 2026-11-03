@@ -139,13 +139,16 @@ function footer(mobile) {
 const files=[['nightshift.svg',hero(false)],['nightshift-mobile.svg',hero(true)],['next-floor.svg',footer(false)],['next-floor-mobile.svg',footer(true)],
   ...projects.flatMap((p,i)=>[[`${p.file}.svg`,card(p,false,i)],[`${p.file}-mobile.svg`,card(p,true,i)]])];
 for(const [name,content] of files) await writeFile(new URL(name,out),content);
-// Content versions keep GitHub's image cache from showing earlier artwork.
+// Keep stable filenames for direct links; the README uses content-named copies
+// because GitHub's raw-file redirects can discard cache-busting query strings.
 const readmeUrl=new URL('../README.md',import.meta.url);
 let readme=await readFile(readmeUrl,'utf8');
 for(const [name,content] of files) {
   const version=createHash('sha256').update(content).digest('hex').slice(0,10);
-  const source=new RegExp(`(src(?:set)?="\\./assets/${name.replaceAll('.', '\\.')})(?:\\?v=[a-f0-9]+)?"`,'g');
-  readme=readme.replace(source,`$1?v=${version}"`);
+  const base=name.slice(0,-4);
+  await writeFile(new URL(`${base}.${version}.svg`,out),content);
+  const source=new RegExp(`(src(?:set)?="\\./assets/${base})(?:\\.[a-f0-9]{10})?\\.svg(?:\\?v=[a-f0-9]+)?"`,'g');
+  readme=readme.replace(source,`$1.${version}.svg"`);
 }
 await writeFile(readmeUrl,readme);
 console.log(`Rendered ${files.length} original profile assets.`);
