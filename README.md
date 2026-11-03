@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/nightshift-mobile.svg">
-  <img src="./assets/nightshift.svg" width="100%" alt="Upfloor — Frontend developer and AI tool builder in Taiwan. An original skyline featuring Taichung’s bamboo-shoot-inspired National Trade Center and a rooftop pixel cat.">
+  <source media="(max-width: 600px)" srcset="./assets/nightshift-mobile.svg?v=4651f9d837">
+  <img src="./assets/nightshift.svg?v=10f8a25bb4" width="100%" alt="Upfloor — Frontend developer and AI tool builder in Taiwan. An original skyline featuring Taichung’s bamboo-shoot-inspired National Trade Center and a rooftop pixel cat.">
 </picture>
 
 <p align="center">
@@ -18,43 +18,43 @@ I like turning everyday friction into small, useful software.
 
 <a href="https://github.com/Ponpon55837/Squirrel">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/squirrel-mobile.svg">
-    <img src="./assets/squirrel.svg" width="100%" alt="01 — Squirrel. Traditional Chinese input, simplified setup, and a personal touch. Open the Squirrel repository.">
+    <source media="(max-width: 600px)" srcset="./assets/squirrel-mobile.svg?v=8d3a6c1c87">
+    <img src="./assets/squirrel.svg?v=95e77d587b" width="100%" alt="01 — Squirrel. Traditional Chinese input, simplified setup, and a personal touch. Open the Squirrel repository.">
   </picture>
 </a>
 
 <a href="https://github.com/Ponpon55837/MarioKartWorldParams">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/mario-kart-mobile.svg">
-    <img src="./assets/mario-kart.svg" width="100%" alt="02 — Mario Kart World Params. A reference web app for Mario Kart World players. Open the MarioKartWorldParams repository.">
+    <source media="(max-width: 600px)" srcset="./assets/mario-kart-mobile.svg?v=ae489e311e">
+    <img src="./assets/mario-kart.svg?v=0cbdae7003" width="100%" alt="02 — Mario Kart World Params. A reference web app for Mario Kart World players. Open the MarioKartWorldParams repository.">
   </picture>
 </a>
 
 <a href="https://github.com/Ponpon55837/Lucky50">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/lucky50-mobile.svg">
-    <img src="./assets/lucky50.svg" width="100%" alt="03 — Lucky50. A dashboard for exploring 0050 ETF investment insights. Open the Lucky50 repository.">
+    <source media="(max-width: 600px)" srcset="./assets/lucky50-mobile.svg?v=dc2126c674">
+    <img src="./assets/lucky50.svg?v=c32210c194" width="100%" alt="03 — Lucky50. A dashboard for exploring 0050 ETF investment insights. Open the Lucky50 repository.">
   </picture>
 </a>
 
 <a href="https://github.com/Ponpon55837/agent-pets">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/agent-pets-mobile.svg">
-    <img src="./assets/agent-pets.svg" width="100%" alt="04 — Agent Pets. A desktop companion that shows what your AI coding agents are doing. Open the Agent Pets repository.">
+    <source media="(max-width: 600px)" srcset="./assets/agent-pets-mobile.svg?v=b1938ff797">
+    <img src="./assets/agent-pets.svg?v=3810685a75" width="100%" alt="04 — Agent Pets. A desktop companion that shows what your AI coding agents are doing. Open the Agent Pets repository.">
   </picture>
 </a>
 
 <a href="https://github.com/Ponpon55837/WorkLog.Ai">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/work-intelligence-mobile.svg">
-    <img src="./assets/work-intelligence.svg" width="100%" alt="05 — Work Intelligence. Local-first work memory for developers: keep agent sessions, decisions, and reports in one place. Open the WorkLog.Ai repository.">
+    <source media="(max-width: 600px)" srcset="./assets/work-intelligence-mobile.svg?v=c20c686458">
+    <img src="./assets/work-intelligence.svg?v=cded7f4be2" width="100%" alt="05 — Work Intelligence. Local-first work memory for developers: keep agent sessions, decisions, and reports in one place. Open the WorkLog.Ai repository.">
   </picture>
 </a>
 
 <a href="https://github.com/Ponpon55837/agent-pets-plugins">
   <picture>
-    <source media="(max-width: 600px)" srcset="./assets/pet-plugins-mobile.svg">
-    <img src="./assets/pet-plugins.svg" width="100%" alt="06 — Agent Pets Plugins. The online plugin catalog for Agent Pets. Open the Agent Pets Plugins repository.">
+    <source media="(max-width: 600px)" srcset="./assets/pet-plugins-mobile.svg?v=9fdd8d0592">
+    <img src="./assets/pet-plugins.svg?v=13198d1f74" width="100%" alt="06 — Agent Pets Plugins. The online plugin catalog for Agent Pets. Open the Agent Pets Plugins repository.">
   </picture>
 </a>
 
@@ -69,8 +69,8 @@ Away from the keyboard: good food, online games, and Taiwanese dramas.
 <br>
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/next-floor-mobile.svg">
-  <img src="./assets/next-floor.svg" width="100%" alt="Always a learner. Always one floor up. Upfloor / Ponpon55837.">
+  <source media="(max-width: 600px)" srcset="./assets/next-floor-mobile.svg?v=5981d2c99a">
+  <img src="./assets/next-floor.svg?v=6627ce8412" width="100%" alt="Always a learner. Always one floor up. Upfloor / Ponpon55837.">
 </picture>
 
 <!-- Original artwork is generated with: node scripts/render-profile.mjs -->

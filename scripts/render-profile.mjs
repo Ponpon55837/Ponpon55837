@@ -1,6 +1,7 @@
 // Original Upfloor artwork; no external images, fonts, packages, or services.
 // Edit the palette/copy here, then run: node scripts/render-profile.mjs
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 
 const out = new URL('../assets/', import.meta.url);
 await mkdir(out, { recursive: true });
@@ -138,4 +139,13 @@ function footer(mobile) {
 const files=[['nightshift.svg',hero(false)],['nightshift-mobile.svg',hero(true)],['next-floor.svg',footer(false)],['next-floor-mobile.svg',footer(true)],
   ...projects.flatMap((p,i)=>[[`${p.file}.svg`,card(p,false,i)],[`${p.file}-mobile.svg`,card(p,true,i)]])];
 for(const [name,content] of files) await writeFile(new URL(name,out),content);
+// Content versions keep GitHub's image cache from showing earlier artwork.
+const readmeUrl=new URL('../README.md',import.meta.url);
+let readme=await readFile(readmeUrl,'utf8');
+for(const [name,content] of files) {
+  const version=createHash('sha256').update(content).digest('hex').slice(0,10);
+  const source=new RegExp(`(src(?:set)?="\\./assets/${name.replaceAll('.', '\\.')})(?:\\?v=[a-f0-9]+)?"`,'g');
+  readme=readme.replace(source,`$1?v=${version}"`);
+}
+await writeFile(readmeUrl,readme);
 console.log(`Rendered ${files.length} original profile assets.`);
