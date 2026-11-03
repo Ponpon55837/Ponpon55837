@@ -33,15 +33,15 @@ function city() {
       s += rect(x+8+col*13,y+12+row*17,5,7,(row+col+i)%4===0?c.amber:c.teal,`opacity="${(row+col)%3===0?'.8':'.25'}"`);
     }
   }
-  // Stepped tower and a small vertical shop sign: a nod to Taiwan.
+  // Stepped tower and a small neon light panel: a nod to Taiwan.
   s += rect(351,91,4,35,c.teal) + rect(345,120,16,12,'#41616a');
   for(let i=0;i<6;i++) {
     const y=134+i*26;
     s += `<path d="M${335-i*2} ${y}h${36+i*4}l-5 22h-${26+i*4}Z" fill="#26404a"/>`;
     s += rect(337-i*2,y+3,32+i*4,2,c.teal,'opacity=".65"') + rect(350,y+9,5,9,c.amber,i===1?'class="window"':'opacity=".6"');
   }
-  s += rect(322,292,62,108,'#203740') + rect(222,209,29,78,c.amber,'rx="2"');
-  s += text(236,239,'上',22,c.bg,'text-anchor="middle" font-family="sans-serif"') + text(236,269,'樓',22,c.bg,'text-anchor="middle" font-family="sans-serif"');
+  s += rect(322,292,62,108,'#203740') + rect(225,213,22,66,'#10252e','rx="2"');
+  for(let i=0;i<3;i++) s += rect(230,222+i*19,12,10,c.amber,`opacity="${1-i*.2}"`);
   s += '<path d="M102 218V187m-16 5h31m-25 9h19" stroke="#718c90" fill="none"/>';
   s += rect(0,367,478,50,'#091119') + rect(0,367,478,3,c.teal,'opacity=".65"');
   s += `<g transform="translate(363 319) scale(3)" shape-rendering="crispEdges"><path d="M0 4V0h3v3h5V0h3v4h2v7h-2v5H1v-4h-3V7h2Z" fill="${c.amber}"/><path d="M11 14h6v-5h3v8h-9Z" fill="${c.amber}"/>${rect(1,6,2,2,c.bg)}${rect(8,6,2,2,c.bg)}${rect(4,9,2,1,'#b8794e')}</g>`;
@@ -86,7 +86,7 @@ function icon(type,accent) {
 const projects=[
   {file:'squirrel',repo:'Squirrel',name:'Squirrel',label:'INPUT',icon:'keyboard',accent:c.teal,
     desktop:'Traditional Chinese input, simplified setup, and a personal touch.',
-    mobile:['Traditional Chinese input,','simplified setup, and','a personal touch.'],tags:'RIME  /  TRADITIONAL CHINESE'},
+    mobile:['Traditional Chinese input','with a personal touch.'],tags:'RIME  /  TRADITIONAL CHINESE'},
   {file:'mario-kart',repo:'MarioKartWorldParams',name:'Mario Kart World Params',label:'PLAY',icon:'kart',accent:c.amber,
     desktop:'A reference web app for Mario Kart World players.',
     mobile:['A reference web app','for Mario Kart World players.'],tags:'WEB APP  /  GAME REFERENCE'},
@@ -95,26 +95,26 @@ const projects=[
     mobile:['A dashboard for exploring','0050 ETF investment insights.'],tags:'0050 ETF  /  DASHBOARD'},
   {file:'agent-pets',repo:'agent-pets',name:'Agent Pets',label:'COMPANION',icon:'pet',accent:c.amber,
     desktop:'A desktop companion that shows what your AI coding agents are doing.',
-    mobile:['A desktop companion that shows','what your AI coding agents','are doing.'],tags:'DESKTOP  /  AI AGENTS'},
+    mobile:['A desktop companion','for your AI coding agents.'],tags:'DESKTOP  /  AI AGENTS'},
   {file:'work-intelligence',repo:'WorkLog.Ai',name:'Work Intelligence',label:'MEMORY',icon:'memory',accent:c.teal,
     desktop:'Local-first work memory. Sessions, decisions, and reports in one place.',
-    mobile:['Local-first work memory.','Sessions, decisions, and reports','in one place.'],tags:'LOCAL-FIRST  /  DEVELOPER TOOLS'},
+    mobile:['Local-first work memory:','sessions, decisions, reports.'],tags:'LOCAL-FIRST  /  DEVELOPER TOOLS'},
   {file:'pet-plugins',repo:'agent-pets-plugins',name:'Agent Pets Plugins',label:'EXTEND',icon:'plugin',accent:c.amber,
     desktop:'The online plugin catalog for Agent Pets.',
     mobile:['The online plugin catalog','for Agent Pets.'],tags:'PLUGINS  /  AGENT PETS'},
 ];
 function card(p,mobile,index) {
-  const w=mobile?600:1080,h=mobile?326:186,n=String(index+1).padStart(2,'0');
-  let s=shell(w,h)+rect(1,26,3,h-52,p.accent);
+  const w=mobile?600:1080,h=mobile?152:108,n=String(index+1).padStart(2,'0');
+  let s=shell(w,h)+rect(1,18,3,h-36,p.accent);
   if(mobile) {
-    s+=`<g transform="translate(26 24) scale(.75)">${icon(p.icon,p.accent)}</g>`;
-    s+=text(112,48,`${n} / ${p.label}`,17,p.accent,mono)+text(112,83,p.name,p.name.length>20?29:32,c.ink,'font-weight="700"');
-    p.mobile.forEach((v,i)=>{s+=text(28,140+i*31,v,23,c.muted);});
-    s+=line(28,250,572)+text(28,289,p.tags,16,p.accent,mono)+text(568,290,'↗',26,c.ink,'text-anchor="end"');
+    s+=`<g transform="translate(20 46) scale(.6)">${icon(p.icon,p.accent)}</g>`;
+    s+=text(92,42,p.name,p.name.length>20?26:28,c.ink,'font-weight="700"');
+    p.mobile.forEach((v,i)=>{s+=text(92,84+i*30,v,22,c.muted);});
+    s+=text(574,40,'↗',24,p.accent,'text-anchor="end"');
   } else {
-    s+=`<g transform="translate(28 49)">${icon(p.icon,p.accent)}</g>`;
-    s+=text(143,36,`${n} / ${p.label}`,13,p.accent,`${mono} letter-spacing="1.2"`)+text(142,79,p.name,32,c.ink,'font-weight="700"');
-    s+=text(143,114,p.desktop,19,c.muted)+text(143,153,p.tags,13,p.accent,`${mono} letter-spacing="1"`)+text(1033,53,'↗',28,p.accent,'text-anchor="end"');
+    s+=`<g transform="translate(24 24) scale(.68)">${icon(p.icon,p.accent)}</g>`;
+    s+=text(108,43,p.name,29,c.ink,'font-weight="700"')+text(108,78,p.desktop,18,c.muted);
+    s+=text(1048,36,`${n} ↗`,17,p.accent,`${mono} text-anchor="end"`);
   }
   return svg(w,h,`${p.name}: ${p.desktop}`,s);
 }
