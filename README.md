@@ -1,6 +1,6 @@
 <picture>
   <source media="(max-width: 600px)" srcset="./assets/nightshift-mobile.svg">
-  <img src="./assets/nightshift.svg" width="100%" alt="Upfloor — Frontend developer and AI tool builder in Taiwan. An original pixel skyline, a rooftop cat, and a workstation one floor above the city.">
+  <img src="./assets/nightshift.svg" width="100%" alt="Upfloor — Frontend developer and AI tool builder in Taiwan. An original skyline featuring Taichung’s bamboo-shoot-inspired National Trade Center and a rooftop pixel cat.">
 </picture>
 
 <p align="center">
@@ -13,8 +13,6 @@ I’m **Upfloor**, a frontend developer building interfaces and tools for workin
 I like turning everyday friction into small, useful software.
 
 把介面做好，也把與 AI 一起工作的流程做好。
-
-<br>
 
 ## Selected builds
 
@@ -59,8 +57,6 @@ I like turning everyday friction into small, useful software.
     <img src="./assets/pet-plugins.svg" width="100%" alt="06 — Agent Pets Plugins. The online plugin catalog for Agent Pets. Open the Agent Pets Plugins repository.">
   </picture>
 </a>
-
-<br>
 
 ## Toolbox
 

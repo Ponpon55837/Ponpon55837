@@ -33,14 +33,25 @@ function city() {
       s += rect(x+8+col*13,y+12+row*17,5,7,(row+col+i)%4===0?c.amber:c.teal,`opacity="${(row+col)%3===0?'.8':'.25'}"`);
     }
   }
-  // Stepped tower and a small neon light panel: a nod to Taiwan.
-  s += rect(351,91,4,35,c.teal) + rect(345,120,16,12,'#41616a');
-  for(let i=0;i<6;i++) {
-    const y=134+i*26;
-    s += `<path d="M${335-i*2} ${y}h${36+i*4}l-5 22h-${26+i*4}Z" fill="#26404a"/>`;
-    s += rect(337-i*2,y+3,32+i*4,2,c.teal,'opacity=".65"') + rect(350,y+9,5,9,c.amber,i===1?'class="window"':'opacity=".6"');
+  // Pixel-grid silhouette of Taichung's bamboo-shoot tower, matching the skyline.
+  // Shape reference: https://www.aedas.com/en/project/national-trade-center/
+  const ntc='M292 368V336H296V304H300V276H304V248H312V220H320V196H328V172H336V152H344V136H352V120H360V108H364V100H368V104H372V108H376V116H380V128H384V144H388V164H392V192H396V236H400V296H404V368Z';
+  s += `<g shape-rendering="crispEdges"><defs><clipPath id="ntc"><path d="${ntc}"/></clipPath></defs>`;
+  s += `<path d="${ntc}" fill="#1b303a" stroke="#355461" stroke-width="2"/>`;
+  s += '<g clip-path="url(#ntc)">';
+  for(let row=0;row<16;row++) {
+    const y=116+row*16;
+    for(let x=292;x<408;x+=8) {
+      const step=x<328?8:x<360?4:0;
+      s += rect(x,y+step,8,2,c.amber,'opacity=".6"');
+    }
+    for(let col=0;col<8;col++) {
+      if((row*7+col*3)%5<2) continue;
+      s += rect(300+col*13,y+5,5,7,(row+col)%4===0?c.amber:c.teal,`opacity="${(row+col)%3===0?'.65':'.25'}"`);
+    }
   }
-  s += rect(322,292,62,108,'#203740') + rect(225,213,22,66,'#10252e','rx="2"');
+  s += '</g></g>';
+  s += rect(225,213,22,66,'#10252e','rx="2"');
   for(let i=0;i<3;i++) s += rect(230,222+i*19,12,10,c.amber,`opacity="${1-i*.2}"`);
   s += '<path d="M102 218V187m-16 5h31m-25 9h19" stroke="#718c90" fill="none"/>';
   s += rect(0,367,478,50,'#091119') + rect(0,367,478,3,c.teal,'opacity=".65"');
@@ -86,35 +97,34 @@ function icon(type,accent) {
 const projects=[
   {file:'squirrel',repo:'Squirrel',name:'Squirrel',label:'INPUT',icon:'keyboard',accent:c.teal,
     desktop:'Traditional Chinese input, simplified setup, and a personal touch.',
-    mobile:['Traditional Chinese input','with a personal touch.'],tags:'RIME  /  TRADITIONAL CHINESE'},
+    mobile:['Rime · Traditional Chinese input'],tags:'RIME  /  TRADITIONAL CHINESE'},
   {file:'mario-kart',repo:'MarioKartWorldParams',name:'Mario Kart World Params',label:'PLAY',icon:'kart',accent:c.amber,
     desktop:'A reference web app for Mario Kart World players.',
-    mobile:['A reference web app','for Mario Kart World players.'],tags:'WEB APP  /  GAME REFERENCE'},
+    mobile:['Mario Kart World reference'],tags:'WEB APP  /  GAME REFERENCE'},
   {file:'lucky50',repo:'Lucky50',name:'Lucky50',label:'FINANCE',icon:'chart',accent:c.teal,
     desktop:'A dashboard for exploring 0050 ETF investment insights.',
-    mobile:['A dashboard for exploring','0050 ETF investment insights.'],tags:'0050 ETF  /  DASHBOARD'},
+    mobile:['0050 ETF dashboard'],tags:'0050 ETF  /  DASHBOARD'},
   {file:'agent-pets',repo:'agent-pets',name:'Agent Pets',label:'COMPANION',icon:'pet',accent:c.amber,
     desktop:'A desktop companion that shows what your AI coding agents are doing.',
-    mobile:['A desktop companion','for your AI coding agents.'],tags:'DESKTOP  /  AI AGENTS'},
+    mobile:['AI agent desktop companion'],tags:'DESKTOP  /  AI AGENTS'},
   {file:'work-intelligence',repo:'WorkLog.Ai',name:'Work Intelligence',label:'MEMORY',icon:'memory',accent:c.teal,
     desktop:'Local-first work memory. Sessions, decisions, and reports in one place.',
-    mobile:['Local-first work memory:','sessions, decisions, reports.'],tags:'LOCAL-FIRST  /  DEVELOPER TOOLS'},
+    mobile:['Local-first work memory'],tags:'LOCAL-FIRST  /  DEVELOPER TOOLS'},
   {file:'pet-plugins',repo:'agent-pets-plugins',name:'Agent Pets Plugins',label:'EXTEND',icon:'plugin',accent:c.amber,
     desktop:'The online plugin catalog for Agent Pets.',
-    mobile:['The online plugin catalog','for Agent Pets.'],tags:'PLUGINS  /  AGENT PETS'},
+    mobile:['Agent Pets plugin catalog'],tags:'PLUGINS  /  AGENT PETS'},
 ];
 function card(p,mobile,index) {
-  const w=mobile?600:1080,h=mobile?152:108,n=String(index+1).padStart(2,'0');
-  let s=shell(w,h)+rect(1,18,3,h-36,p.accent);
+  const w=mobile?600:1080,h=mobile?108:82,n=String(index+1).padStart(2,'0');
+  let s=shell(w,h)+rect(1,14,3,h-28,p.accent);
   if(mobile) {
-    s+=`<g transform="translate(20 46) scale(.6)">${icon(p.icon,p.accent)}</g>`;
-    s+=text(92,42,p.name,p.name.length>20?26:28,c.ink,'font-weight="700"');
-    p.mobile.forEach((v,i)=>{s+=text(92,84+i*30,v,22,c.muted);});
-    s+=text(574,40,'↗',24,p.accent,'text-anchor="end"');
+    s+=`<g transform="translate(20 30) scale(.55)">${icon(p.icon,p.accent)}</g>`;
+    s+=text(88,35,p.name,p.name.length>20?26:28,c.ink,'font-weight="700"');
+    s+=text(88,77,p.mobile[0],22,c.muted)+text(574,36,'↗',24,p.accent,'text-anchor="end"');
   } else {
-    s+=`<g transform="translate(24 24) scale(.68)">${icon(p.icon,p.accent)}</g>`;
-    s+=text(108,43,p.name,29,c.ink,'font-weight="700"')+text(108,78,p.desktop,18,c.muted);
-    s+=text(1048,36,`${n} ↗`,17,p.accent,`${mono} text-anchor="end"`);
+    s+=`<g transform="translate(24 17) scale(.55)">${icon(p.icon,p.accent)}</g>`;
+    s+=text(94,31,p.name,26,c.ink,'font-weight="700"')+text(94,62,p.desktop,18,c.muted);
+    s+=text(1048,30,`${n} ↗`,17,p.accent,`${mono} text-anchor="end"`);
   }
   return svg(w,h,`${p.name}: ${p.desktop}`,s);
 }
