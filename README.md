@@ -1,27 +1,80 @@
-[![Visits Badge](https://badges.pufler.dev/commits/yearly/Ponpon55837)](https://badges.pufler.dev)
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/nightshift-mobile.svg">
+  <img src="./assets/nightshift.svg" width="100%" alt="Upfloor — Frontend developer and AI tool builder in Taiwan. An original pixel skyline, a rooftop cat, and a workstation one floor above the city.">
+</picture>
 
-# Hi there, I'm Upfloor - aka program learner. 👋
+<p align="center">
+  <a href="#selected-builds">Selected builds</a> &nbsp; / &nbsp;
+  <a href="#toolbox">Toolbox</a> &nbsp; / &nbsp;
+  <a href="https://github.com/Ponpon55837?tab=repositories">All repos ↗</a>
+</p>
 
-## I'm always to be a learner at the coding road!
+I’m **Upfloor**, a frontend developer building interfaces and tools for working with AI agents.
+I like turning everyday friction into small, useful software.
 
-🔭 I’m currently working on a frontend course!<br />
-🌱 I’m currently learning javascript. 🤣 <br />
-👯 I’m looking to learning more react.js, next.js, vue.js and cms api course. 😁 <br />
-🥅 Goals: Contribute more to Open Source projects with js. 💖 <br />
-⚡ Fun fact: I love to eat dilicious food, play online game, and watch Taiwan local drama.
+把介面做好，也把與 AI 一起工作的流程做好。
 
----
+<br>
 
-### Languages and Tools:
+## Selected builds
 
-| <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" /> | <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" /> | <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /> | <img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" /> | <img align="left" alt="Vue" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" /> | <img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" /> | <img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" /> | <img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" /> | <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" /> |
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+<a href="https://github.com/Ponpon55837/Squirrel">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/squirrel-mobile.svg">
+    <img src="./assets/squirrel.svg" width="100%" alt="01 — Squirrel. Traditional Chinese input, simplified setup, and a personal touch. Open the Squirrel repository.">
+  </picture>
+</a>
 
----
+<a href="https://github.com/Ponpon55837/MarioKartWorldParams">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/mario-kart-mobile.svg">
+    <img src="./assets/mario-kart.svg" width="100%" alt="02 — Mario Kart World Params. A reference web app for Mario Kart World players. Open the MarioKartWorldParams repository.">
+  </picture>
+</a>
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Ponpon55837&show_icons=true)  
+<a href="https://github.com/Ponpon55837/Lucky50">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/lucky50-mobile.svg">
+    <img src="./assets/lucky50.svg" width="100%" alt="03 — Lucky50. A dashboard for exploring 0050 ETF investment insights. Open the Lucky50 repository.">
+  </picture>
+</a>
 
-## When I am coding, I can hear nothing.
+<a href="https://github.com/Ponpon55837/agent-pets">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/agent-pets-mobile.svg">
+    <img src="./assets/agent-pets.svg" width="100%" alt="04 — Agent Pets. A desktop companion that shows what your AI coding agents are doing. Open the Agent Pets repository.">
+  </picture>
+</a>
 
-![programmer gif](https://thumbs.gfycat.com/KnobbyJoyfulDeermouse-size_restricted.gif)
-![programmer gif](https://media4.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
+<a href="https://github.com/Ponpon55837/WorkLog.Ai">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/work-intelligence-mobile.svg">
+    <img src="./assets/work-intelligence.svg" width="100%" alt="05 — Work Intelligence. Local-first work memory for developers: keep agent sessions, decisions, and reports in one place. Open the WorkLog.Ai repository.">
+  </picture>
+</a>
+
+<a href="https://github.com/Ponpon55837/agent-pets-plugins">
+  <picture>
+    <source media="(max-width: 600px)" srcset="./assets/pet-plugins-mobile.svg">
+    <img src="./assets/pet-plugins.svg" width="100%" alt="06 — Agent Pets Plugins. The online plugin catalog for Agent Pets. Open the Agent Pets Plugins repository.">
+  </picture>
+</a>
+
+<br>
+
+## Toolbox
+
+**Interfaces** &nbsp; `TypeScript` · `JavaScript` · `Vue` · `React` · `HTML` · `CSS`
+
+**Tools & workflows** &nbsp; `Node.js` · `Git` · `MCP` · `AI agents`
+
+Away from the keyboard: good food, online games, and Taiwanese dramas.
+
+<br>
+
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/next-floor-mobile.svg">
+  <img src="./assets/next-floor.svg" width="100%" alt="Always a learner. Always one floor up. Upfloor / Ponpon55837.">
+</picture>
+
+<!-- Original artwork is generated with: node scripts/render-profile.mjs -->
